@@ -12,7 +12,7 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="space-y-4">
               <Link to="/" className="flex items-center gap-2 ">
-                <img src="https://res.cloudinary.com/dxz23vjoo/image/upload/v1737040790/faysfzz3ymjamoxnxkic.png" alt="Logo" className='h-12 w-auto'/>
+                <img src="https://res.cloudinary.com/dxz23vjoo/image/upload/v1737040790/faysfzz3ymjamoxnxkic.png" alt="Logo" className='h-16 w-auto'/>
                 <span className="ml-2 text-2xl font-serif text-Mehaai-primary">Mehaai Ayurveda</span>
               </Link>
               <p className="text-Mehaai-beige/80 pr-4">
