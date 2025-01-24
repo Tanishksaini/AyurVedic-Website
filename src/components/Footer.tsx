@@ -5,15 +5,15 @@ import { Leaf, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-
 export default function Footer() {
   return (
     <>
-      <footer className="bg-Mehaai-dark text-white">
+      <footer className="bg-Mehaai-secondary text-white">
         <div className="container mx-auto px-6">
           {/* Main Footer Content */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 py-16">
             {/* Brand Section */}
             <div className="space-y-4">
               <Link to="/" className="flex items-center gap-2 ">
-                <img src="https://res.cloudinary.com/dxz23vjoo/image/upload/v1737040790/faysfzz3ymjamoxnxkic.png" alt="Logo" className='h-16 w-auto'/>
-                <span className="ml-2 text-2xl font-serif text-Mehaai-primary">Mehaai Ayurveda</span>
+                <img src="logo.jpg" alt="Logo" className='h-20 w-auto'/>
+                <span className="ml-2 text-2xl font-serif text-Mehaai-primary">Dharayy Ayurveda</span>
               </Link>
               <p className="text-Mehaai-beige/80 pr-4">
                 Ancient wisdom meets modern wellness. Discover authentic Ayurvedic remedies for holistic health.
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="border-t border-Mehaai-primary/20 py-6 text-center text-Mehaai-beige/60">
-            <p>© {new Date().getFullYear()} Mehaai Ayurvedia. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Dharayy Ayurveda. All rights reserved.</p>
           </div>
         </div>
       </footer>

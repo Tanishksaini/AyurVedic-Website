@@ -12,7 +12,7 @@ export default function About() {
               Our Journey in Ayurvedic Wellness
             </h1>
             <p className="text-lg text-sage-700 mb-8">
-              Founded on the principles of authentic Ayurvedic traditions, Mehaai Ayurvedia brings
+              Founded on the principles of authentic Ayurvedic traditions, DharayyAyurvedia brings
               centuries-old healing wisdom to modern wellness seekers.
             </p>
           </div>
@@ -33,7 +33,7 @@ export default function About() {
             <div>
               <h2 className="text-3xl font-serif text-sage-900 mb-6">Our Mission</h2>
               <p className="text-sage-700 mb-6">
-                At Mehaai Ayurvedia, we're committed to preserving and sharing the authentic
+                At DharayyAyurvedia, we're committed to preserving and sharing the authentic
                 principles of Ayurveda while making them accessible to modern wellness enthusiasts.
                 Our products combine traditional wisdom with contemporary research to deliver
                 natural, effective solutions for holistic well-being.

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, ShoppingCart } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const products = [
   {
@@ -61,10 +62,18 @@ const products = [
 export default function Products() {
   const [selectedCategory, setSelectedCategory] = React.useState('All');
   const categories = ['All', 'Supplements', 'Personal Care'];
+  const navigate=useNavigate()
 
   const filteredProducts = selectedCategory === 'All'
     ? products
     : products.filter(product => product.category === selectedCategory);
+    
+    const handleClick=(p:any)=>{
+      if (p===1) {
+        navigate("/products/as")
+      }
+      
+    }
 
   return (
     <div className="bg-sage-50 min-h-screen py-16">
@@ -93,7 +102,7 @@ export default function Products() {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map(product => (
-            <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div key={product.id} className="bg-white rounded-lg overflow-hidden shadow-md" onClick={()=>{handleClick(product.id)}}>
               <img
                 src={product.image}
                 alt={product.name}

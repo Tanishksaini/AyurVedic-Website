@@ -157,7 +157,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-serif text-center text-Mehaai-dark mb-12">
-            Why Choose Mehaai Ayurvedia?
+            Why Choose DharayyAyurvedia?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -295,7 +295,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-Mehaai-dark text-white">
+      <section className="py-16 bg-Mehaai-secondary text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-serif mb-6">
             Start Your Wellness Journey Today
