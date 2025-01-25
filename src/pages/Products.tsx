@@ -84,6 +84,7 @@ export default function Products() {
     : products.filter(product => product.category === selectedCategory);
     
     const handleClick=(p:any)=>{
+      window.scrollTo(0, 0);
       if (p===1) {
         navigate("/products/Methi-page")
       }
@@ -152,7 +153,10 @@ export default function Products() {
                 <p className="text-sage-700 mb-4">{product.description}</p>
                 <div className="flex items-center justify-between mt-auto">
                   <span className="text-xl font-medium text-sage-900">₹{product.price} per 200g</span>
-                  <button className="bg-Mehaai-primary text-white px-4 py-2 rounded-full hover:bg-Mehaai-accent transition-colors duration-300" onClick={handleClick}>
+                  <button className="bg-Mehaai-primary text-white px-4 py-2 rounded-full hover:bg-Mehaai-accent transition-colors duration-300" onClick={(e)=>{
+                     e.stopPropagation();
+                     handleClick(product.id)
+                  }}>
                      See More
                     </button>
                 </div>

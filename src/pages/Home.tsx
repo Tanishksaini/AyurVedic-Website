@@ -60,6 +60,7 @@ export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate=useNavigate()
   const handleclick=(p:any)=>{
+    window.scrollTo(0, 0);
     if (p===1) {
       navigate("/products/Methi-page")
     }
