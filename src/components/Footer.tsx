@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Leaf, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
-
+import { Leaf, Mail, Phone, MapPin, Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+("/src/logo/logo.jpg");
 export default function Footer() {
   return (
     <>
@@ -12,21 +12,21 @@ export default function Footer() {
             {/* Brand Section */}
             <div className="space-y-4">
               <Link to="/" className="flex items-center gap-2 ">
-                <img src="logo.jpg" alt="Logo" className='h-20 w-auto'/>
-                <span className="ml-2 text-2xl font-serif text-Mehaai-primary">Dharayy Ayurveda</span>
+                <img src="/logo/logo.jpg" alt="Logo" className='h-20 w-auto'/>
+                <span className="ml-2 text-2xl font-serif text-Mehaai-primary">Dharay Ayurveda</span>
               </Link>
               <p className="text-Mehaai-beige/80 pr-4">
                 Ancient wisdom meets modern wellness. Discover authentic Ayurvedic remedies for holistic health.
               </p>
               <div className="flex space-x-4 pt-4">
-                <a href="#" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
+                <a href="https://www.instagram.com/dharayayurveda" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
                   <Instagram className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
-                  <Facebook className="h-5 w-5" />
+                <a href="https://youtube.com/@dharayayurveda" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
+                  <Youtube className="h-5 w-5" />
                 </a>
-                <a href="#" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
-                  <Twitter className="h-5 w-5" />
+                <a href="https://facebook.com/share/18NBRH6Fjq/?mibextid=wwXIfr" className="text-Mehaai-primary hover:text-Mehaai-accent transition-colors">
+                  <Facebook className="h-5 w-5" />
                 </a>
               </div>
             </div>
@@ -45,11 +45,7 @@ export default function Footer() {
                     Our Products
                   </Link>
                 </li>
-                <li>
-                  <Link to="/blog" className="text-Mehaai-beige/80 hover:text-Mehaai-primary transition-colors">
-                    Blog & Articles
-                  </Link>
-                </li>
+               
                 <li>
                   <Link to="/contact" className="text-Mehaai-beige/80 hover:text-Mehaai-primary transition-colors">
                     Contact Us
@@ -64,15 +60,15 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-center text-Mehaai-beige/80">
                   <Mail className="h-5 w-5 mr-3 text-Mehaai-primary" />
-                  <span>contact@Mehaai.com</span>
+                  <span>dharayayurveda@gmail.com</span>
                 </li>
                 <li className="flex items-center text-Mehaai-beige/80">
                   <Phone className="h-5 w-5 mr-3 text-Mehaai-primary" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>(+91)9001908599</span>
                 </li>
                 <li className="flex items-center text-Mehaai-beige/80">
                   <MapPin className="h-5 w-5 mr-3 text-Mehaai-primary" />
-                  <span>123 Ayurveda Street, Wellness City</span>
+                  <span>141 shri karni ,uma vihar,Gokulpura,JAIPUR, RAJASTHAN 302012</span>
                 </li>
               </ul>
             </div>
@@ -82,7 +78,7 @@ export default function Footer() {
 
           {/* Bottom Bar */}
           <div className="border-t border-Mehaai-primary/20 py-6 text-center text-Mehaai-beige/60">
-            <p>© {new Date().getFullYear()} Dharayy Ayurveda. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Dharay Ayurveda. All rights reserved.</p>
           </div>
         </div>
       </footer>

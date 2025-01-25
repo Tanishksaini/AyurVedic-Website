@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { Star, ShoppingCart, ChevronLeft, ChevronRight } from 'lucide-react';
-
-export default function AshwagandhaPowder() {
+"/src/MultaniImages/mt2.jpg";
+"/src/MultaniImages/mt1.jpg";
+"/src/MultaniImages/mt3.jpg";
+"/src/MultaniImages/mt4.jpg"
+"/src/MultaniImages/mt5.jpg";;
+export default function MultaniPage() {
   const [currentImage, setCurrentImage] = useState(0);
   
   const images = [
-    "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1576016770956-d2486aad0c89?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1600813456857-638da11eac53?auto=format&fit=crop&w=800&q=80"
+      "/MultaniImages/mt1.jpg",
+      "/MultaniImages/mt2.jpg",
+      "/MultaniImages/mt3.jpg",
+       "/MultaniImages/mt4.jpg",
+        "/MultaniImages/mt5.jpg"
   ];
 
   const reviews = [
@@ -37,8 +43,8 @@ export default function AshwagandhaPowder() {
             <div className="relative overflow-hidden rounded-lg shadow-lg">
               <img 
                 src={images[currentImage]} 
-                alt="Ashwagandha Root Powder" 
-                className="w-full h-96 object-cover"
+                alt="Alovera Gel" 
+                className="w-full h-96 object-contain"
               />
               <button 
                 onClick={prevImage} 
@@ -69,7 +75,7 @@ export default function AshwagandhaPowder() {
           {/* Product Details */}
           <div>
             <h1 className="text-4xl font-serif text-sage-900 mb-4">
-              Ashwagandha Root Powder
+          Multani Mitti Powder
             </h1>
             <div className="flex items-center mb-4">
               <div className="flex mr-4">
@@ -82,33 +88,26 @@ export default function AshwagandhaPowder() {
               </div>
               <span className="text-sage-600">(5.0) 50 Reviews</span>
             </div>
-            <p className="text-2xl font-bold text-sage-900 mb-6">$24.99</p>
+            <p className="text-2xl font-bold text-sage-900 mb-6">₹178 per 200g</p>
             
             <p className="text-sage-700 mb-6">
-              Our organic Ashwagandha Root Powder is a potent adaptogenic herb traditionally used in Ayurvedic medicine to support stress relief, enhance vitality, and promote overall well-being. Sourced from premium organic farms and carefully processed to preserve maximum nutritional value.
+            Multani Mitti, or Fuller's Earth, is a natural clay used for skincare. It helps clean the skin, remove excess oil, and reduce pimples. It makes the skin smooth, soft, and glowing. Many people use it with rose water or milk as a face mask.
             </p>
 
             <div className="mb-6">
               <h3 className="font-serif text-sage-900 mb-2">Key Benefits:</h3>
               <ul className="list-disc list-inside text-sage-700 space-y-2">
-                <li>Reduces stress and anxiety</li>
-                <li>Supports energy and stamina</li>
-                <li>Promotes mental clarity</li>
-                <li>Supports immune system</li>
+             
+  <li><span className='font-bold'>Deep Cleanses:</span> Removes dirt, oil, and impurities from the skin, leaving it fresh and clear.</li>
+  <li><span className='font-bold'>Controls Oil:</span> Absorbs excess oil, making it ideal for oily and acne-prone skin.</li>
+  <li><span className='font-bold'>Improves Skin Texture:</span> Makes the skin smooth and soft, enhancing its overall appearance.</li>
+  <li><span className='font-bold'>Natural Cooling Effect:</span> Soothes the skin and provides a calming, cooling sensation.</li>
+
+
               </ul>
             </div>
 
-            <div className="flex space-x-4">
-              <input 
-                type="number" 
-                defaultValue="1" 
-                min="1" 
-                className="w-20 px-3 py-2 border rounded-md text-center"
-              />
-              <button className="flex-1 bg-Mehaai-primary text-white px-6 py-2 rounded-full hover:bg-Mehaai-accent transition-colors flex items-center justify-center">
-                <ShoppingCart className="mr-2" /> Add to Cart
-              </button>
-            </div>
+            
           </div>
         </div>
 

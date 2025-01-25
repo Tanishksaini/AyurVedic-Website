@@ -6,7 +6,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
-import AshwagandhaPowder from './pages/Ashwagandha Root Powder Product Page';
+
+import MethiPage from './pages/Methi';
+import AloveraPage from './pages/Alovera';
+import MultaniPage from './pages/MultaniPage';
+import NeemPage from './pages/NeemPage';
+import PumpKinPage from './pages/PumpkinPage';
+import ChiaPage from './pages/ChiaPage';
+import GondPage from './pages/GondPage';
 
 function App() {
   return (
@@ -19,8 +26,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/products/as" element={<AshwagandhaPowder/>} />
-            
+            <Route path="/products/Methi-page" element={<MethiPage/>} />
+            <Route path="/products/Alovera-page" element={<AloveraPage/>} />
+            <Route path="/products/Multani-page" element={<MultaniPage/>} />
+            <Route path="/products/Neem-page" element={<NeemPage/>} />
+            <Route path="/products/Pumpkin-page" element={<PumpKinPage/>} />
+            <Route path="/products/Chia-page" element={<ChiaPage/>} />
+            <Route path="/products/Gond-page" element={<GondPage/>} />
           </Routes>
         </main>
         <Footer />
