@@ -100,7 +100,7 @@ export default function Home() {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-fit animate-scale-in"
+              className="w-full h-full object-contain md:object-fill animate-scale-in"
             />
             <div className="absolute inset-0 z-20 flex items-center justify-center">
               <div className="text-center px-6 max-w-4xl animate-fade-in">
